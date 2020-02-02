@@ -13,4 +13,4 @@ else:
 
 from .provider import GitLabOAuth2Provider
 
-    register('gitlab', GitLabOAuth2Provider)
+register('gitlab', GitLabOAuth2Provider)
