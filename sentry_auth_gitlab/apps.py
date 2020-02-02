@@ -7,8 +7,8 @@ class Config(AppConfig):
     name = "sentry_auth_gitlab"
 
     def ready(self):
-        from sentry.auth import register
+        from sentry import auth
 
         from .provider import GitLabOAuth2Provider
 
-        register('gitlab', GitLabOAuth2Provider)
+        auth.register('gitlab', GitLabOAuth2Provider)
