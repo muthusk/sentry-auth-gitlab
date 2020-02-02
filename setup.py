@@ -19,11 +19,11 @@ install_requires = [
 
 setup(
     name='sentry-auth-gitlab',
-    version='0.1.0',
+    version='0.1.1',
     author='Sky Lothar',
     author_email='allothar@gmail.com@gmail.com',
     url='https://github.com/skylothar',
-    description='Gitlab authentication provider for Sentry',
+    description='Gitlab authentication provider for Sentry v10',
     long_description=__doc__,
     license='',
     packages=find_packages(exclude=['tests']),
@@ -34,7 +34,7 @@ setup(
     include_package_data=True,
     entry_points={
         'sentry.apps': [
-            'auth_gitlab = sentry_auth_gitlab',
+            'auth_gitlab = sentry_auth_gitlab.apps.Config',
          ],
     },
     classifiers=[
